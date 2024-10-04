@@ -11,10 +11,10 @@ class Estudiante {
 Estudiante.prototype.saludar = () => console.log(`Hola, me llamo ${nombre} y tengo ${edad} años.`);
 
 // Añadir un método para listar las asignaturas
-Estudiante.prototype.listarAsignaturas = (asignaturas) => console.log(`Mis asignaturas son: ${asignaturas.join(', ')}`);
+// Estudiante.prototype.listarAsignaturas = (asignaturas) => console.log(`Mis asignaturas son: ${asignaturas.join(', ')}`);
 
 // Zergatik nombre eta edad hartzen du baina asignaturas, ez??
-//Estudiante.prototype.listarAsignaturas = () => console.log(`Mis asignaturas son: ${asignaturas.join(', ')}`);
+Estudiante.prototype.listarAsignaturas = () => console.log(`Mis asignaturas son: ${asignaturas.join(', ')}`);
 
 // Crear un nuevo estudiante
 let estudiante1 = new Estudiante('Ana', 20, 'Matemáticas', 'Historia', 'Literatura');
@@ -28,7 +28,7 @@ console.log(`Edad: ${edad}`);
     
 // Mostrar saludo y asignaturas
 estudiante1.saludar();
-estudiante1.listarAsignaturas(asignaturas);
+estudiante1.listarAsignaturas();
     
 // Función en ES5 para sumar notas
 function calcularPromedio() {

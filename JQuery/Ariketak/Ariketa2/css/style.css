@@ -1,0 +1,13 @@
+body {
+    background-image: url("../img/spacestars.jpg");
+}
+
+h1{
+    color: white;
+}
+
+#rocket{
+    position: relative;
+    left: 50%;
+    top: 0;
+}

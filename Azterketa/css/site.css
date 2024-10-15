@@ -1,0 +1,29 @@
+body {
+    /*margin-left: 30px;*/
+    font-family: sans-serif;
+    /*text-align: center;*/
+}
+.navbar-custom {
+    background-color: #af4c9b85; 
+  }
+  .navbar-custom .nav-link {
+    color: #bc2a67; 
+    text-align: center;
+  }
+  .navbar-custom .nav-link:hover {
+    border-bottom: 3px solid #7b65f8; 
+    color: #ffeb3b; 
+  }
+  .navbar-custom .nav-item.active .nav-link {
+    color: #ffeb3b; 
+  }
+.bgformu {
+  background-color: #af4c9b85; 
+  border-radius: 2px;
+}
+.botoia {
+  background-color: #bc2a67;
+}
+.form-select {
+  height: 40px;
+}

@@ -26,6 +26,7 @@ $(document).ready(function(){
                 e.preventDefault()
                 e.stopPropagation()
             }
+            e.preventDefault()
             $(this).addClass("was-validated")
 
             // Zazpigarren ariketarako arrow funtzioak

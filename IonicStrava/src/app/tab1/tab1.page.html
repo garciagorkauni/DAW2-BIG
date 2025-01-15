@@ -1,8 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Klubak
-    </ion-title>
+    <ion-title>Klubak </ion-title>
+    <ion-progress-bar type="indeterminate" *ngIf="showLoader"></ion-progress-bar>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +14,7 @@
             <ion-col size="6">
               <h2>{{kluba.name}}</h2>
               <ion-badge color="success">{{kluba.club_type}}</ion-badge>&nbsp;&nbsp;
-              <ion-icon [name]="kluba.private ? 'lock-closed-outline' : 'lock-open-outline'"></ion-icon>
+              <ion-icon [name]="kluba.privatea ? 'lock-closed-outline' : 'lock-open-outline'"></ion-icon>
               <br>
               <h4>{{kluba.description}}</h4>
               <p>Kirol mota: <i><b>{{kluba.sport_type}}</b></i></p>
@@ -34,4 +33,9 @@
       </ion-col>
     </ion-row>
     </ion-grid>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button color="success" [routerLink]="['/kluba-gehitu']">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>
